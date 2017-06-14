@@ -131,6 +131,7 @@ public class ExampleInstrumentedTest {
         finally {
             System.out.println(connection.getNetworkInfo(ConnectivityManager.TYPE_MOBILE));
             System.out.println(connection.getNetworkInfo(ConnectivityManager.TYPE_WIFI));
+			this.runExec("ip route");
         }
 //        for (Network network : networks){
 //            System.out.println("Network is " + network);
